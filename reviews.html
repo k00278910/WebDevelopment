@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2 </title>
+    <meta charset="utf-8">
+
+    <style>
+        /* parent container, 6 column grid, margin added and page width set */
+        /* colour added */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 16% 16% 16% 17% 17% 17%;
+            margin: auto;
+            width: 90%;
+            background-color: whitesmoke;
+        }
+
+        /* child container logo spans column 1 */
+        /* colour added */
+        .logo {
+            grid-column: 1/2;
+            background-color: #D2C4BC;
+
+        }
+
+        /* logo image centered within logo container */
+        img {
+            display: block;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        /* navbar container spans columns 2-6 */
+         /* colour added */
+        .navbar {
+
+            grid-column: 2/7;
+            background-color: #D2C4BC;
+
+
+        }
+
+        /* Rule to display navbar horizontally */
+        /* Margin added to create horizontal space between menu items*/
+        li {
+            display: inline-block;
+            margin-right: 7em;
+
+        }
+
+        /* Navigation links size and colour set*/
+        /* Navigation links unterlines removed using text-decoration=none*/
+        nav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: whitesmoke;
+
+        }
+
+        /* center navbar list within div and remove list item marker */
+        /* padding added to centre navbar list horizontally*/
+        ul {
+
+            list-style-type: none;
+            text-align: center;
+            padding-top: 1em;
+        }
+        /* heading 1 container spans columns 1-6 */
+        /* text centered horizontally using text-align */
+        /* padding added to top in order to centre the text vertically */
+        /* text colour & background colours added */
+        /* border added beneath h1 text */
+        .heading1 {
+            background-color: #E2E2D6;
+            grid-column: 1/7;
+            text-align: center;
+            color: #B6B3B4;
+            padding-top: 1em;
+            border-bottom: 1px solid #B6B3B4;
+        }
+
+        .reviewOne {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 1/3;
+            padding-bottom: 2em;
+        }
+
+        .reviewTwo {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 3/5;
+            padding-bottom: 2em;
+        }
+
+        .reviewThree {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 5/7;
+            padding-bottom: 2em;
+        }
+        /* copyright container spans columns 1-2 */
+        /* text centered horizontally using text-align */
+        /* text colour & background colours added */
+        .copyright {
+            background-color: #D2C4BC;
+            grid-column: 1/3;
+            text-align: center;
+            color: whitesmoke;
+           
+        }
+        /* search container spans columns 3-4 */
+        /* text centered horizontally using text-align */
+        /* text colour & background colours added */
+        /* padding added to top in order to centre the text vertically */
+        .search {
+            background-color: #D2C4BC;
+            grid-column: 3/5;
+            text-align: center;
+            padding-top: 15px;
+            padding-left: 10px;
+        }
+
+        /* display footer search paragraph (block-level) as inline */
+        /* text colour added */
+        .search p {
+            display: inline;
+            color: whitesmoke;
+            padding-right: 10px;
+        }
+        /* media container spans columns 4-6 */
+        /* text centered horizontally using text-align */
+        /* background colours added */
+        /* padding added to top in order to centre the text vertically */
+        .media {
+            background-color: #D2C4BC;
+            grid-column: 5/7;
+            text-align: center;
+            padding-top: 6px;
+        }
+
+        /* font awesome icons */
+        /* font size and icon width increased to improved usability */
+        /* text centered horizontally using text-align */
+        /* aligned vertically using margin-top */
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 6px;
+        }
+
+        /* hover effect for icons */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each icon */
+
+        /* Facebook */
+        .fa-facebook {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-pinterest {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* LinkedIn */
+        .fa-linkedin {
+            background-color: #96BBAA;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- parent container for grid activation  -->
+    <div class="grid-container">
+        <!-- child container logo  -->
+        <!-- contains image of logo with link to homepage  -->
+        <header class="logo">
+            <a href="index.html">
+                <img src="images/newlogo.png" alt="">
+            </a>
+        </header>
+        <!-- child container (with class attribute navbar)   -->
+        <!-- contains unordered list with links to html pages within the website  -->
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- child container (with class attribute) heading1  -->
+        <!-- sectioned using header tag, contains the page h1 header  -->
+        <header class="heading1">
+           
+            <h1>REVIEWS</h1>
+            
+        </header>
+
+        <!-- child container (with class attribute reviewOne)  -->
+        <!-- sectioned section tag to arrange general content within the document body  -->
+        <section class="reviewOne">
+           <!-- sectioned article tag to define independent, self-contained content -->
+            <article>
+            
+            <h2>Jerry Salz-New York Magazine</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+            
+            </article>
+    
+        </section>
+        <!-- child container (with class attribute reviewTwo)  -->
+        <!-- sectioned section tag to arrange general content within the document body  -->
+        <section class="reviewTwo">
+            <!-- sectioned article tag to define independent, self-contained content -->
+            <article>
+            
+            <h2>Lucy R. Lippard-The Art Story</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+           </article>
+            
+        </section>
+
+        <section class="reviewThree">
+            <!-- sectioned article tag to define independent, self-contained content -->
+            <article>
+            
+            <h2>Boris Groys - NYU Arts & Science</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+           </article>
+           
+        </section>
+        <!-- child container (class attribute copyright)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains copyright paragraph -->
+        <footer class="copyright">
+            <p>© 2022 Apparent Art</p>
+
+        </footer>
+        <!-- child container (class attribute search)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains searchbox -->
+        <footer class="search">
+
+            <p>Find Artist: </p>
+            <input type="text" placeholder="Search..">
+
+        </footer>
+        <!-- child container (class attribute media)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains media icon library (font awsome) -->
+        <footer class="media">
+
+            <!-- font awsome link -->
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+
+        </footer>
+
+
+
+    </div>
+
+</body></html>

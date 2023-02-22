@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2 </title>
+    <meta charset="utf-8">
+
+    <style>
+        /* Parent container, 6 column grid, margin added and page width set */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 16% 16% 16% 17% 17% 17%;
+            margin: auto;
+            width: 90%;
+            background-color: whitesmoke;
+        }
+
+        /* child container logo spans column 1 */
+        .logo {
+            grid-column: 1/2;
+            background-color: #D2C4BC;
+
+        }
+
+        /* logo image centered within logo container */
+        img {
+            display: block;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        /* navbar container spans columns 2-6 */
+        .navbar {
+
+            grid-column: 2/7;
+            background-color: #D2C4BC;
+
+
+        }
+
+        /* rule to display horizontal navbar, margin added to create space between menu items*/
+
+        li {
+            display: inline-block;
+            margin-right: 7em;
+
+        }
+
+
+        nav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: whitesmoke;
+
+        }
+
+        /* center navbar list within div and remove list item marker */
+        /* padding added to centre navbar list horizontally*/
+        ul {
+
+            list-style-type: none;
+            text-align: center;
+            padding-top: 1em;
+        }
+
+        .heading1 {
+            background-color: #E2E2D6;
+            grid-column: 1/7;
+            padding-left: 30em;
+            color: #B6B3B4;
+            padding-top: 2em;
+        }
+
+        .reviewOne {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 1/3;
+            padding-bottom: 2em;
+        }
+
+        .reviewTwo {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 3/5;
+            padding-bottom: 2em;
+        }
+
+        .reviewThree {
+            background-color: #E2E2D6;
+            padding-right: 3em;
+            padding-left: 3em;
+            grid-column: 5/7;
+            padding-bottom: 2em;
+        }
+
+        .copyright {
+            background-color: #D2C4BC;
+            grid-column: 1/3;
+            text-align: center;
+        }
+
+        .search {
+            background-color: #D2C4BC;
+            grid-column: 3/5;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        /* display footer search paragraph as inline */
+        .search p {
+            display: inline;
+        }
+
+        .media {
+            background-color: #D2C4BC;
+            grid-column: 5/7;
+            text-align: center;
+            padding-top: 6px;
+        }
+
+
+
+        /* font awesome icons */
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 6px;
+        }
+
+        /* hover effect for icons */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each icon */
+
+        /* Facebook */
+        .fa-facebook {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-pinterest {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* LinkedIn */
+        .fa-linkedin {
+            background-color: #96BBAA;
+            color: white;
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div class="grid-container">
+
+        <header class="logo">
+            <a href="index.html">
+                <img src="images/newlogo.png" alt="">
+            </a>
+
+        </header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li> <a href="index.html">Home</a></li>
+                    <li><a href="artwork.html">Artwork</a></li>
+                    <li><a href="exhibitions.html">Exhibitions</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                    <li><a href="ContactUs.html">Contact Us</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <header class="heading1">
+
+            <h1>REVIEWS</h1>
+        </header>
+
+
+        <section class="reviewOne">
+
+            <h2>Jerry Salz-New York Magazine</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            
+
+        </section>
+
+        <section class="reviewTwo">
+
+            <h2>Lucy R. Lippard-The Art Story</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            
+        </section>
+
+        <section class="reviewThree">
+
+            <h2>Boris Groys - NYU Arts & Science</h2>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor totam, autem corporis maxime rem quidem omnis ea reiciendis nisi molestiae quae laborum sed dignissimos error amet, assumenda explicabo neque porro sunt? Blanditiis nostrum beatae, iste eius aperiam, dolores dicta ipsum.</p>
+
+           
+        </section>
+
+        <footer class="copyright">
+            <p>© 2022 Apparent Art</p>
+
+        </footer>
+        <footer class="search">
+
+            <p>Find Artist: </p>
+            <input type="text" placeholder="Search..">
+
+        </footer>
+        <footer class="media">
+
+            <!-- Add media icon library -->
+
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+
+        </footer>
+
+
+
+    </div>
+
+</body></html>

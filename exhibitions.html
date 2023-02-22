@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Assignment 2 </title>
+    <meta charset="utf-8">
+
+    <style>
+        /* parent container, 6 column grid, margin added and page width set */
+        /* colour added */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 16% 16% 16% 17% 17% 17%;
+            margin: auto;
+            width: 90%;
+            background-color: whitesmoke;
+        }
+
+        /* child container (with id attribute) logo spans column 1 */
+        /* colour added */
+        #logo {
+            grid-column: 1/2;
+            background-color: #D2C4BC;
+
+        }
+
+        /* logo image centered within logo container */
+        img {
+            display: block;
+            margin: auto;
+            width: 80%;
+
+        }
+
+        /* navbar container (with class attribute) spans columns 2-6 */
+        /* colour added */
+        .navbar {
+
+            grid-column: 2/7;
+            background-color: #D2C4BC;
+
+
+        }
+
+        /* Rule to display navbar horizontally */
+        /* Margin added to create horizontal space between menu items*/
+        li {
+            display: inline-block;
+            margin-right: 7em;
+
+        }
+
+        /* Navigation links size and colour set*/
+        /* Navigation links unterlines removed using text-decoration=none*/
+        nav a {
+            text-decoration: none;
+            font-size: 1.2em;
+            color: whitesmoke;
+
+        }
+
+        /* centered navbar list within div and removed list item marker */
+        /* padding added in order to centre the entire navbar list horizontally*/
+        ul {
+
+            list-style-type: none;
+            text-align: center;
+            padding-top: 1em;
+        }
+
+        /* heading 1 container spans columns 1-6 */
+        /* text centered horizontally using text-align */
+        /* padding added to top in order to centre the text vertically */
+        /* text colour & background colours added */
+        /* border added beneath h1 text */
+        .heading1 {
+            background-color: #E2E2D6;
+            grid-column: 1/7;
+            text-align: center;
+            color: #B6B3B4;
+            padding-top: 1em;
+            border-bottom: 1px solid #B6B3B4;
+        }
+
+        .video {
+            background-color: #E2E2D6;           
+            padding-left: 5em;
+            grid-column: 1/4;
+            padding-top: 1em;
+            
+        }
+        
+        .video h2 {
+            padding-left: 4em;
+            padding-bottom: 1em;
+        }
+
+        .tablelist {
+            background-color: #E2E2D6;
+            padding-right: 5em;
+            grid-column: 4/7;
+            padding-bottom: 2em;
+            padding-top: 1em;
+        }
+
+        /* centre h2 heading horizontally within container */
+        .tablelist h2 {
+            text-align: center;
+            padding-left: 3em;
+        }
+        /* set padding inside table */
+        td,th {
+            border: 1px solid #CCC;
+            padding: 5px;
+        }
+
+        table {
+            border: 1px solid black;
+            margin-left: 4em;
+
+        }
+        /* display borders as single line */
+        table,th,td {
+            border-collapse: collapse;
+        }
+
+        table {
+            text-align: center;
+            padding: 3px;
+            margin-bottom: 40px;
+            margin-top: 45px;
+        }
+
+        /* copyright container spans columns 1-2 */
+        /* text centered horizontally using text-align */
+        /* text colour & background colours added */
+        .copyright {
+            background-color: #D2C4BC;
+            grid-column: 1/3;
+            text-align: center;
+            color: whitesmoke;
+        }
+
+        /* search container spans columns 3-4 */
+        /* text centered horizontally using text-align */
+        /* text colour & background colours added */
+        /* padding added to top in order to centre the text vertically */
+        .search {
+            background-color: #D2C4BC;
+            grid-column: 3/5;
+            text-align: center;
+            padding-top: 15px;
+        }
+
+        /* display footer search paragraph (block-level) as inline */
+        /* text colour added */
+        .search p {
+            display: inline;
+            color: whitesmoke;
+        }
+
+        /* media container spans columns 4-6 */
+        /* text centered horizontally using text-align */
+        /* background colours added */
+        /* padding added to top in order to centre the text vertically */
+
+        .media {
+            background-color: #D2C4BC;
+            grid-column: 5/7;
+            text-align: center;
+            padding-top: 6px;
+        }
+
+        /* font awesome icons */
+        /* font size and icon width increased to improved usability */
+        /* text centered horizontally using text-align */
+        /* aligned vertically using margin-top */
+        .fa {
+            padding: 5px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin-top: 6px;
+        }
+
+        /* hover effect for icons */
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        /* Set a specific color for each icon */
+
+        /* Facebook */
+        .fa-facebook {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-twitter {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* Twitter */
+        .fa-pinterest {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+        /* LinkedIn */
+        .fa-linkedin {
+            background-color: #96BBAA;
+            color: white;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <!-- parent container for grid activation  -->
+    <div class="grid-container">
+        <!-- child container (with id attribute) logo  -->
+        <!-- contains image of logo with link to homepage  -->
+        <div id="logo">
+            <a href="index.html">
+                <img src="images/newlogo.png" alt="">
+            </a>
+        </div>
+        <!-- child container nav (with class attribute navbar)   -->
+        <!-- contains unordered list with links to html pages within the website  -->
+        <nav class="navbar">
+
+            <ul>
+                <li> <a href="index.html">Home</a></li>
+                <li><a href="artwork.html">Artwork</a></li>
+                <li><a href="exhibitions.html">Exhibitions</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- child container (with class attribute) heading1  -->
+        <!-- sectioned using header tag, contains the page h1 header  -->
+        <header class="heading1">
+            <h1>EXHIBITIONS</h1>
+        </header>
+
+        <!-- child container (with class attribute video)  -->
+        <!-- sectioned section tag to arrange general content within the document body  -->
+        <section class="video">
+             <h2>Masterpieces from Bergen</h2>                      
+                        <iframe width="430" height="235" src="https://www.youtube.com/embed/lx2Lz_QFSfw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        </section>
+        <!-- child container (with class attribute table)  -->
+        <!-- sectioned section tag  -->
+        <section class="tablelist">
+            <!-- sectioned article tag to define independent, self-contained content -->
+            <article>
+                <h2>Past Exhibitions</h2>
+                <table>
+                    <tr>
+                        <th>Dates</th>
+                        <th>Exhibition</th>
+                        <th>Location</th>
+                    </tr>
+                    <tr>
+                        <td>27 May – 4 Sept 2022</td>
+                        <td>Edvard Munch. Masterpieces from Bergen</td>
+                        <td>The Courtauld Gallery, London</td>
+                    </tr>
+                    <tr>
+                        <td>17 Jan – 14 Sept 2021</td>
+                        <td>Edvard Munch. Shadows</td>
+                        <td>Munchmuseet, Oslo</td>
+                    </tr>
+                    <tr>
+                        <td>22 Feb – 19 Nov 2020</td>
+                        <td>Edvard Munch. Prints</td>
+                        <td>National Gallery, London</td>
+                    </tr>
+                    <tr>
+                        <td>12 June – 19 Oct 2020</td>
+                        <td>Edvard Munch. The Last Hour</td>
+                        <td>National Gallery of Ireland, Dublin</td>
+                    </tr>
+                    <tr>
+                        <td>20 Jan – 11 Nov 2019</td>
+                        <td>Edvard Munch. Portraits</td>
+                        <td>The Met Museum, New York</td>
+                    </tr>
+                    <tr>
+                        <td>15 Sept – 19 Dec 2019</td>
+                        <td>Edvard Munch. Cruelty</td>
+                        <td>Art Institute of Chicago</td>
+                    </tr>
+
+                </table>
+
+            </article>
+
+        </section>
+
+
+        <!-- child container (class attribute copyright)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains copyright paragraph -->
+        <footer class="copyright">
+            <p>© 2022 Apparent Art</p>
+        </footer>
+        <!-- child container (class attribute search)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains searchbox -->
+        <footer class="search">
+
+            <p>Find Artist: </p>
+            <input type="text" placeholder="Search..">
+        </footer>
+        <!-- child container (class attribute media)  -->
+        <!-- sectioned footer tag to display footer of the webpage -->
+        <!-- contains media icon library (font awsome) -->
+        <footer class="media">
+
+            <!-- font awsome link -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+            <!-- Add font awesome icons -->
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-pinterest"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+
+        </footer>
+
+
+
+    </div>
+
+</body>
+
+</html>

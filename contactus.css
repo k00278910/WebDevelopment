@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;800&family=VT323&display=swap');
+
+body {
+    margin: 0;
+    font-family: poppins;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    background-color: E2E2D6;
+}
+
+.logo {
+    grid-column: 1/2; 
+    width: 100%;
+    
+}
+
+li {display: inline-block;margin-left: 4em; margin-right: 4em;height: 3em;margin-top: 2em;}
+        
+        nav a{text-decoration:none; font-size: 1.2em;color: whitesmoke;}
+        ul {background-color: D2C4BC;list-style-type: none;margin: 2px;}
+
+.navbar {
+    grid-column: 2/6;
+    
+}
+#list1{background-color: white;}
+#age-group{background-color: white;}
+
+h1 {
+    text-align: center;
+
+    font-size: 2.5em;
+}
+
+
+.sidebar {
+    grid-column: 2/3;
+    background-color: E2E2D6;
+    padding: 5px;
+    text-align: center;
+    
+}
+#newsletter{
+color: red;}
+
+.contact {
+    grid-column: 3/5;
+    background-color: white;
+   
+}
+
+.aside {
+    grid-column: 5/6;
+    background-color: E2E2D6;
+    padding: 20px;
+}
+#Competitions{
+color: red;}
+
+/* Style the submit button with a specific background color etc */
+        input[type=submit] {
+            background-color: red;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        /* When moving the mouse over the submit button, add slight change in colour */
+        input[type=submit]:hover {
+            background-color: orangered;
+        }
+
+        input[type=reset] {
+            background-color: 96BBAA;
+            color: white;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 5px;
+        }
+
+        /* When moving the mouse over the reset button, add a darker green color */
+        input[type=reset]:hover {
+            background-color: #45a049;
+        }
+
+footer {
+    grid-column: 1/4;
+    text-align: center;
+    padding: 30px;
+    background-color: D2C4BC;
+   
+}
+
+footer2 {
+    grid-column: 4/6;
+    text-align: center;
+    
+    padding: 30px;
+    background-color: D2C4BC;
+    
+}
+
+/* Style all font awesome icons */
+.fa {
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* hover effect added to all font awsome icons */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Same colour to all social media icons */
+.fa-facebook {
+    background-color: 96BBAA;
+    color: white;
+}
+
+
+.fa-twitter {
+    background-color: 96BBAA;
+    color: white;
+}
+
+
+.fa-pinterest {
+    background-color: 96BBAA;
+    color: white;
+}
